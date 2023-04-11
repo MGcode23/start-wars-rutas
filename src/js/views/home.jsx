@@ -30,6 +30,12 @@ export const Home = () => {
             <Vehicles nature="vehicles" item="name" />
           </div>
         </div>
+
+        <footer className="bg-dark text-center text-lg-start">
+          <div className="text-center p-3" style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}>
+            made by <span style={{ color: "#ffc107", fontWeight: "bold" }}>MGcode</span> with force and love!
+          </div>
+        </footer>
       </div>
     </>
   );

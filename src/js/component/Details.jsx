@@ -125,4 +125,3 @@ const Characterdetails = (item) => {
 };
 
 export default Characterdetails;
-

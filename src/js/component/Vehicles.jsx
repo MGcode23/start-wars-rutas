@@ -23,8 +23,8 @@ export const Vehicles = (props) => {
               <p className="card-text">{`Capacity: ${item.properties.cargo_capacity}`}</p>
               <p className="card-text">{`Description: ${item.description}`}</p>
               <div className="div">
-                <Link to={`/${nature}/${item._id}`} className="btn btn-primary">
-                  Learn more!
+                <Link to={`/${nature}/${item._id}`} className="btn btn-dark">
+                  Details!
                 </Link>
                 <button
                   type="button"
@@ -41,11 +41,7 @@ export const Vehicles = (props) => {
                     }
                   }}
                 >
-                  {store.vehicles.includes(item._id) ? (
-                    <i className="far fa-heart"></i>
-                  ) : (
-                    <i className="fas fa-heart"></i>
-                  )}
+                  Add
                 </button>
               </div>
             </div>

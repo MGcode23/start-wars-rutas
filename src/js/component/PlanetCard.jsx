@@ -27,8 +27,8 @@ export const PlanetCard = (props) => {
               <p className="card-text">{`Gravity: ${item.properties.gravity}`}</p>
               <p className="card-text">{`Climate: ${item.properties.climate}`}</p>
               <div className="div">
-                <Link to={`/${nature}/${item._id}`} className="btn btn-primary">
-                  Learn more!
+                <Link to={`/${nature}/${item._id}`} className="btn btn-dark">
+                  Details!
                 </Link>
                 <button
                   type="button"
@@ -38,14 +38,13 @@ export const PlanetCard = (props) => {
                       : "btn-outline-warning"
                   }
                   `}
-                  // data-bs-toggle="button"
                   onClick={() => {
                     {
                       actions.addCard(item, name);
                     }
                   }}
                 >
-                  <i className="fas fa-heart"></i>
+                  Add
                 </button>
               </div>
             </div>

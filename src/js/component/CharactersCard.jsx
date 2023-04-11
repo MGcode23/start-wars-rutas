@@ -25,8 +25,8 @@ export const CharactersCard = (props) => {
               <p className="card-text">{`Hair color: ${item.properties.hair_color}`}</p>
               <p className="card-text">{`Eye color: ${item.properties.eye_color}`}</p>
               <div className="div">
-                <Link to={`/${nature}/${item._id}`} className="btn btn-primary">
-                  Learn more!
+                <Link to={`/${nature}/${item._id}`} className="btn btn-dark">
+                  Details!
                 </Link>
                 <button
                   type="button"
@@ -36,14 +36,13 @@ export const CharactersCard = (props) => {
                       : "btn-outline-warning"
                   } 
                   `}
-                  // data-bs-toggle="button"
                   onClick={() => {
                     {
                       actions.addCard(item, name);
                     }
                   }}
                 >
-                  <i className="fas fa-heart"></i>
+                  Add
                 </button>
               </div>
             </div>
